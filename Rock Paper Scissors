@@ -1,0 +1,24 @@
+import random as ran
+user = int(input("Enter 0 for Rock. 1 for Paper and 2 for Scissors: "))
+dic = {"Rock":0, "Paper":1, "Scissors":2}
+new_dict = dict(zip(dic.values(), dic.keys()))
+comp = ran.randint(0,2)
+print("computer:",new_dict[comp])
+print("You:",new_dict[user])
+if  comp == user:
+    print("Draw")
+elif comp == 0 and user == 1:
+    print("You Won")
+elif comp == 0 and user == 2:
+    print("You lost")
+elif comp == 1 and user == 0:
+    print("You Lost")
+elif comp == 1 and user == 2:
+    print("You Won")
+elif comp == 2 and user== 0:
+    print("You Won")
+elif comp == 2 and user == 1:
+    print("You Lost")
+else:
+    print("Enter correct number")
+
