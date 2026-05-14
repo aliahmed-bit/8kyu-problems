@@ -1,0 +1,6 @@
+giv = [34, 15, 88, 2]
+give = [34, -345, -1, 100]
+a = sorted(giv)
+b = sorted(give)
+print(a[0])
+print(b[0])
